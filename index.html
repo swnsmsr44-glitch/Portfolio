@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sons - Pirate Portfolio</title>
+  <meta name="description" content="Personal portfolio — Welcome to my world" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">Sons</div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-decor" id="hero-decor" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <h1 class="hero-title">Welcome to my world</h1>
+        <p class="hero-sub">I code bots, scripts, tools ▣</p>
+
+        <div class="avatar-wrap" aria-hidden="false">
+          <div class="avatar-border" role="img" aria-label="Profile avatar">
+            <!-- الصورة التي أرسلتها: احفظها باسم avatar-custom.jpg في نفس المجلد -->
+            <img src="avatar-custom.jpg" alt="avatar" class="avatar-img" onerror="this.style.display='none'">
+            <!-- لو لم توجد الصورة سيظهر افتراضياً حلقة SVG -->
+            <svg class="outer-ring" viewBox="0 0 200 200" aria-hidden="true">
+              <circle cx="100" cy="100" r="92" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <p>Yassin - Frontend Engineer
+
+I'm Yassin, a frontend engineer specializing in creating engaging, performant, and accessible web applications. I believe that exceptional user experience is achieved through a combination of thoughtful design, seamless interactions, and clean, maintainable code.</p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>💎 Projects</h2>
+        <div class="projects-grid">
+          <article class="project">
+            <h3>🪐 Sons Checker</h3>
+            <p>The best bot for checking Dump</p>
+          </article>
+          <article class="project">
+            <h3>💸 Tools Checker</h3>
+            <p>These are tools for scanning websites and their contents, and also for determining whether they have a security system or not.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>🔊 Contact</h2>
+        <p>Telegram: <a href="https://t.me/ProgrammerYassin">𝙿𝚛𝚘𝚐𝚛𝚊𝚖𝚖𝚎𝚛 𝚂𝚘𝚗𝚜</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Programmer Yassin — All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

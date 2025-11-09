@@ -1,0 +1,53 @@
+<!-- Simple original chibi-style anime avatar (SVG) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="anime avatar">
+  <defs>
+    <linearGradient id="hairGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#cde9ff"/>
+      <stop offset="1" stop-color="#e6d7ff"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#fef3f6"/>
+      <stop offset="1" stop-color="#ffeef4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background circle -->
+  <rect width="100%" height="100%" rx="0" fill="none"/>
+  <g transform="translate(256,256)">
+    <circle r="200" fill="url(#bgGrad)"/>
+    <!-- hair -->
+    <path d="M-120 -20 C-120 -90 -20 -150 0 -150 C20 -150 120 -90 120 -20 C90 -30 60 -40 0 -40 C-60 -40 -90 -30 -120 -20 Z" fill="url(#hairGrad)"/>
+    <path d="M-120 -20 C-110 30 -80 70 -20 90 C-40 80 -80 60 -90 30 C-110 10 -120 -10 -120 -20 Z" fill="#d8f2ff" opacity="0.9"/>
+    <path d="M120 -20 C110 30 80 70 20 90 C40 80 80 60 90 30 C110 10 120 -10 120 -20 Z" fill="#d8f2ff" opacity="0.9"/>
+
+    <!-- face base -->
+    <circle cx="0" cy="10" r="85" fill="#fff5fb" stroke="#ffd6e0" stroke-width="4"/>
+
+    <!-- eyes -->
+    <g transform="translate(-34,5)">
+      <ellipse rx="22" ry="18" fill="#ffffff"/>
+      <circle cx="-6" cy="-3" r="9" fill="#4aa7ff"/>
+      <circle cx="-4" cy="-6" r="3.5" fill="#ffffff" opacity="0.9"/>
+      <path d="M-18 8 q18 8 36 0" stroke="#ffd6e0" stroke-width="2" fill="none" opacity="0.35"/>
+    </g>
+    <g transform="translate(34,5)">
+      <ellipse rx="22" ry="18" fill="#ffffff"/>
+      <circle cx="6" cy="-3" r="9" fill="#4aa7ff"/>
+      <circle cx="4" cy="-6" r="3.5" fill="#ffffff" opacity="0.9"/>
+      <path d="M-18 8 q18 8 36 0" stroke="#ffd6e0" stroke-width="2" fill="none" opacity="0.35"/>
+    </g>
+
+    <!-- blush and mouth -->
+    <ellipse cx="-28" cy="34" rx="12" ry="6" fill="#ffd1df" opacity="0.9"/>
+    <ellipse cx="28" cy="34" rx="12" ry="6" fill="#ffd1df" opacity="0.9"/>
+    <path d="M-10 20 q10 14 20 0" fill="#ff8aa0" stroke="none" transform="translate(0,8) scale(1,0.65)"/>
+
+    <!-- cute ahoge -->
+    <path d="M0 -120 C8 -160 48 -180 56 -150" stroke="#cde9ff" stroke-width="8" fill="none" stroke-linecap="round" transform="translate(0,0)"/>
+
+    <!-- small decorative bubble -->
+    <circle cx="-110" cy="-120" r="22" fill="#fff" opacity="0.35"/>
+    <circle cx="-110" cy="-120" r="10" fill="#cde9ff" opacity="0.9"/>
+
+  </g>
+</svg>
